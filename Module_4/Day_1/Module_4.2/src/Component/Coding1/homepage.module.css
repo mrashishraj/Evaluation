@@ -1,0 +1,53 @@
+.mainContainer {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.formMainContainer {
+  width: 400px;
+  border: 1px solid black;
+  margin: 150px;
+  margin-left: 35%;
+}
+
+.heading {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.formContainer {
+  height: 220px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.border {
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.container > * {
+  flex: 1;
+}
+
+.logo {
+  height: 90px;
+  width: 110px;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-top: 20px;
+}
+
+.flex1 {
+  flex: 1;
+}
