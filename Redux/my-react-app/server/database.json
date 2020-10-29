@@ -13,5 +13,12 @@
       "id": 3
     }
   ],
-  "city": []
+  "city": [
+    {
+      "name": "sadsa",
+      "country_code": "asasas",
+      "population": "asdasdad",
+      "id": 1
+    }
+  ]
 }

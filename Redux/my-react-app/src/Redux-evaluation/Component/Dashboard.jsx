@@ -45,13 +45,13 @@ handleToggle=(e)=>{
             <h1>Dashboard</h1>
             <p>Token :- {token}</p>
             <div>
+{/*------------------ COUNTRY SELECT TAG--------------------------------- */}
                 <label htmlFor="">Select Country </label>
-
                 <select name="country" onChange={this.handleChange}>
                     <option value="">---Select Country---</option>
                     {countryList && countryList.map((item)=>(<option key={item.id} value={item.name}>{item.name}</option>))}
                 </select> 
-
+            {/* ---------------ADD NEW COUNTRY--------------------------- */}
                 {isCountry?
                 <div>
                 <label htmlFor="">Add Country</label>
@@ -61,23 +61,21 @@ handleToggle=(e)=>{
 
             </div><br/>
             
-            <div>
-                {/* <label htmlFor="">Select City  </label>
-                <select name="city" onChange={this.handleChange}>
-                <option value="">---Select City---</option>
-                {cityData.data && cityData.data.filter(item=>item.country_code===country).map((item)=>( <option key={item.id} value={item.name}>{item.name}</option> ))} */}
-                {/* </select> */}
+            <div>   
+        {/* -------------------------ADD CITY--------------------------------- */}
                 <label htmlFor="">Add City</label>
                 <input type="text" placeholder="Write City Name" name="city" value={city} onChange={this.handleChange}/>
             </div><br/>
-
             <div>
+        {/* -----------------ADD POPULATION----------------------------------- */}
                 <label>Add Population</label>
                 <input type="text" name="population"  value={population} onChange={this.handleChange}/>                
             </div><br/>
             <div>
             <button onClick={()=>submit({city,country,population})}>Submit</button>
             </div><br/><br/><br/>
+
+{/* -----------------------DATA LIST TABLE------------------------------- */}
             <div style={{backgroundColor:"pink",display:"flex"}}>
                 <table border="1" style={{flex:"1"}}>
                     <thead>

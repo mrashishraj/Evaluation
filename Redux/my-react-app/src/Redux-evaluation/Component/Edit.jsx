@@ -12,25 +12,25 @@ class Edit extends React.Component{
             population:""
         }
     }
-
     handleChange=(e)=>{
         this.setState({
             [e.target.name]:e.target.value
         })
     }
-
     render(){
         const {cityName,population} = this.state
         const {editData,cityData} = this.props
-        console.log(cityData)
         const { id } = this.props.match.params
+
+
         return(
             <div >
             <h2>Edit page for this data</h2>
+{/* -------------------EDIT TABLE---------------------------------------------- */}
             <table border="1">
                     <thead>
                 <tr key="head">
-                    <td>Country Code</td>
+                    <td>Country Code</td> 
                     <td>City Name</td>
                     <td>Population</td>
                     <td>Edit</td>
@@ -49,6 +49,9 @@ class Edit extends React.Component{
         )
     }
 }
+
+
+
 
 const mapStateToProps = state =>({
 cityData:state.city

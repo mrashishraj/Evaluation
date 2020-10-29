@@ -11,12 +11,14 @@ class Login extends React.Component{
             pass:""
         }
     }
+
     handleChange=(e)=>{
         this.setState({
             [e.target.name]:e.target.value
         })
     }
     render(){
+        
         const {uName,pass} = this.state
         const {postData,isLoading,isAuth,errMsg} = this.props
        if(isAuth){
@@ -24,6 +26,8 @@ class Login extends React.Component{
                     <Redirect to="/dashboard"/>)
         }
         return(
+
+    // ----------------------LOGIN INPUT FORM ------------------------------------------------------------------
         <div style={{margin:"200px",backgroundColor:"pink",height:"150px",width:"250px",padding:"80px"}}>
                 <label htmlFor=""> UserName </label>
                 <input type="text" name="uName" value={uName} onChange={this.handleChange}/> <br/><br/>
