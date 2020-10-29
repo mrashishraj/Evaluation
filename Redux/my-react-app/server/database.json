@@ -11,62 +11,7 @@
     {
       "name": "china",
       "id": 3
-    },
-    {
-      "name": "sdffdsf",
-      "id": 4
-    },
-    {
-      "name": "adasd",
-      "id": 5
-    },
-    {
-      "name": "srilanka",
-      "id": 6
-    },
-    {
-      "name": "bangal",
-      "id": 7
-    },
-    {
-      "name": "test",
-      "id": 8
-    },
-    {
-      "name": "sdfsdf",
-      "id": 9
-    },
-    {
-      "name": "india",
-      "id": 10
-    },
-    {
-      "name": "sdsd",
-      "id": 11
-    },
-    {
-      "name": "test",
-      "id": 12
-    },
-    {
-      "name": "sdfsdfdf",
-      "id": 13
-    },
-    {
-      "name": "sdasd",
-      "id": 14
-    },
-    {
-      "name": "sdasd",
-      "id": 15
     }
   ],
-  "city": [
-    {
-      "name": "sdasdasd",
-      "country_code": "sdasd",
-      "population": "21321323",
-      "id": 1
-    }
-  ]
+  "city": []
 }

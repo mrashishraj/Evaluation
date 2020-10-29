@@ -1,6 +1,5 @@
 import React from "react"
 import { connect } from "react-redux"
-import axios from "axios"
 import {edit} from "../Redux/Action"
 import { Link } from "react-router-dom"
 
@@ -20,14 +19,10 @@ class Edit extends React.Component{
         })
     }
 
-    componentDidMount(){
-        axios.get("http://localhost:3000/city")
-        .then(res=>(this.setState({cityData:res})))
-    }
-
     render(){
-        const {cityData,cityName,population} = this.state
-        const {editData} = this.props
+        const {cityName,population} = this.state
+        const {editData,cityData} = this.props
+        console.log(cityData)
         const { id } = this.props.match.params
         return(
             <div >
@@ -56,7 +51,7 @@ class Edit extends React.Component{
 }
 
 const mapStateToProps = state =>({
-city:state.city
+cityData:state.city
 })
 
 const mapDispatchToProps = dispatch => ({

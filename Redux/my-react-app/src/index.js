@@ -5,8 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from "react-redux" 
 import {BrowserRouter} from "react-router-dom"
-// import { store } from './Redux-thunk/Redux/Store';
-// import {store} from "./Counter/Redux/Store"
 import {store} from "./Redux-evaluation/Redux/Store"
 
 ReactDOM.render(
